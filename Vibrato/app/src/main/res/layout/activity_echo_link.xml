@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".EchoLink">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/miracle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:alpha="0.4" />
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="220dp"
+                android:src="@mipmap/miracle"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                >
+
+            </ImageView>
+
+            <TextView
+                style="@style/Echoflow"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Rejection - Miracle"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:background="@drawable/grad"
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Visualizar Lyrics"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                />
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/transp2"
+                >
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/spotify"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="100dp"
+
+                    >
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/seta"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:background="@color/transp2"
+
+                >
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/amazon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="100dp"
+
+                    >
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/seta"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:background="@color/transp2"
+                >
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/youtube"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/seta"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:background="@color/transp2"
+                >
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/soundcloud2"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/seta"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:background="@color/transp2"
+                >
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/deezer"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/seta"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:background="@color/transp2"
+                >
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/apple"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/seta"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/echolinkE"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:text="Prévia"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_marginTop="2sp">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="95dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/miracle">
+
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Miracle"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="18sp">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rejection"
+                            android:textColor="@color/transp2"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="13sp">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="97dp">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/iconspot">
+
+                        </ImageView>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/botaoplay"
+                            android:layout_marginTop="32dp">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:background="@color/echolinkE"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:text="Perfil do Artista"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="100dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@mipmap/bg_1"
+
+                            android:scaleType="centerCrop"
+
+
+                            >
+
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:background="@color/black"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="VIBRATO"
+                    android:textSize="22sp"
+                    >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

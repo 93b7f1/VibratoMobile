@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Vibrato</string>
+    <string name="fraseLogin">EXPLORE, DESCUBRA E APRECIE</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="fraseCadastro">CADASTRE-SE E MOSTRE SUA ARTE PARA O MUNDO!</string>
+    <string name="artista">Artista</string>
+    <string name="ouvinte">Ouvinte</string>
+    <string name="cadastrar">CADASTRAR</string>
+    <string name="personalizar">PERSONALIZAR</string>
+    <string name="cadastro">CADASTRO</string>
+    <string name="nome_musica">Nome música</string>
+    <string name="alterar_foto">Alterar foto de perfil</string>
+    <string name="colecao">Coleção de Músicas</string>
+    <string name="usuario_info">Informações do Usuário</string>
+    <string name="nome_user">Nome de Usuário</string>
+    <string name="x">X</string>
+    <string name="instagram">Instagram</string>
+    <string name="spotify">Spotify</string>
+    <string name="sound_cloud">SoundCloud</string>
+    <string name="genero">Gênero</string>
+    <string name="biografia">Biografia</string>
+    <string name="salvar">Salvar Conteúdo</string>
+    <string name="personalizar_frase">Vamos começar!!! Adicione suas músicas ao feed!</string>
+    <string name="proximaEtapa">Próxima Etapa</string>
+    <string name="lyrics">Lyrics</string>
+    <string name="informacoes">Informações da Música</string>
+    <string name="etapas">Etapas</string>
+    <string name="previaSpotify">Prévia Spotify</string>
+    <string name="alterarFoto">Alterar foto de perfil</string>
+    <string name="echoLink">ECHO Links</string>
+    <string name="login_cadastro_frase">Não possui uma conta? Clique aqui para se cadastrar.</string>
+    <string name="nome">Nome</string>
+    <string name="username">Username</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="senha_confirmacao">Confirmar Senha</string>
+    <string name="homeTopic1">• Publique sua música em poucos passos</string>
+    <string name="homeTopic2">• Identificação de tendências</string>
+    <string name="homeTopic3">• Acessível a qualquer momento</string>
+    <string name="homeButtonPublish">Publique sua música</string>
+    <string name="configuracoes">CONFIGURAÇÕES</string>
+    <string name="editar">Editar</string>
+    <string name="sac">SAC</string>
+    <string name="excluir_conta">Excluir conta</string>
+    <string name="suporte">Suporte</string>
+    <string name="perfil">Perfil</string>
+    <string name="ultimas_vizualizacoes">Últimas Vizualizações</string>
+    <string name="mais_ouvidas">Mais Ouvidas</string>
+    <string name="texto_generico">Desde muito jovem, a música sempre foi minha melhor amiga, minha confiante
+        e minha válvula de escape. Cresci minha ouvindo uma variedade de gêneros musicais que me inspiraram a encontrar
+        a própria voz.</string>
+    <string name="texto_generico2">Desde muito jovem, a música sempre foi minha melhor amiga.</string>
+    <string name="ultimas_publicacoes">Últimas Publicações</string>
+
+</resources>

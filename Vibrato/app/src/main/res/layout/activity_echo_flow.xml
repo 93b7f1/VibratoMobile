@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EchoFlow">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/principal"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageEcho"
+
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/nextImageEcho"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:alpha="0.4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            style="@style/Echoflow"
+            android:layout_width="323dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:id="@+id/echoname"
+            />
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_weight="4"
+            android:layout_marginBottom="-50dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:background="@drawable/echoradius"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/vib"
+
+                    >
+
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/echoradius"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/compartilhar"
+
+                    >
+
+                </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:background="@drawable/echoradius"
+                android:layout_marginTop="35dp"
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/echoesicon2"
+                    >
+
+                </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:background="@color/transp"
+                android:layout_marginTop="35dp"
+                >
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/artmagem"
+                    >
+
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/Echoflow"
+            android:layout_width="350dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/white"
+            android:id="@+id/artistname"
+
+            android:textSize="25sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:src="@mipmap/home"
+                android:onClick="imageViewClicked">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:src="@mipmap/echoesicon5"
+                >
+
+            </ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:src="@mipmap/echoesicon3"
+                >
+
+            </ImageView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

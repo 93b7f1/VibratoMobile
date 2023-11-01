@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Vibrato" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Vibrato" parent="Base.Theme.Vibrato" />
+    <style name="Echoflow">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">#ABB5B5B5</item>
+    </style>
+    <style name="echolinkB">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">#4E9DF1</item>
+    </style>
+    <style name="Pesquisa">
+        <item name="android:background">#222325</item>
+    </style>
+</resources>

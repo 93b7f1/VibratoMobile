@@ -82,7 +82,7 @@ class EchoFlow : AppCompatActivity() {
                 MotionEvent.ACTION_UP -> {
                     val finalY = event.y
                     val deltaY = finalY - initialY
-                    val minDeltaY = 200
+                    val minDeltaY = 500
 
                     if (deltaY < -minDeltaY) {
                         echoId++
@@ -255,7 +255,7 @@ class EchoFlow : AppCompatActivity() {
                         MotionEvent.ACTION_UP -> {
                             val finalY = event.y
                             val deltaY = finalY - initialY
-                            val minDeltaY = 200
+                            val minDeltaY = 100
 
                             if (deltaY < -minDeltaY) {
                                 echoId++

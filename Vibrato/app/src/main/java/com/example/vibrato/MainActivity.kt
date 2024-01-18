@@ -1,5 +1,6 @@
 package com.example.vibrato
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,15 +10,12 @@ import android.widget.TextView
 import android.widget.Toast
 import com.example.vibrato.databinding.ActivityMainBinding
 import com.google.gson.Gson
-import okhttp3.MediaType
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.RequestBody
 import org.json.JSONObject
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-import retrofit2.http.POST
+
 import java.io.IOException
 
 
@@ -27,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     val binding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
     }
+
 
 
     @SuppressLint("SuspiciousIndentation")
@@ -57,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                 val url = "https://vibrato.azurewebsites.net/usuarios/login"
                 val json = dadosLogin.toString()
                 val body =
-                    RequestBody.create(MediaType.parse("application/json; charset=utf-8"), json)
+                    RequestBody.create("application/json; charset=utf-8".toMediaTypeOrNull(), json)
                 val request = Request.Builder()
                     .url(url)
                     .post(body)
@@ -71,8 +70,8 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     override fun onResponse(call: okhttp3.Call, response: okhttp3.Response) {
-                        val responseStatus = response.code()
-                        val responseBody = response.body()?.string()
+                        val responseStatus = response.code
+                        val responseBody = response.body?.string()
 
                         runOnUiThread {
                             if (responseStatus == 404) {
@@ -84,9 +83,17 @@ class MainActivity : AppCompatActivity() {
                                     val gson = Gson()
                                     val login = gson.fromJson(responseBody, DtoAuth::class.java)
                                     authManager.saveAuthToken(login.token.toString())
-//                                    tituloteste.text = responseBody.toString()
                                     val intent = Intent(this@MainActivity, EchoFlow::class.java)
                                     startActivity(intent)
+                                    val sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+
+                                    val editor = sharedPreferences.edit()
+                                    editor.putInt("id", login.id.toString().toInt())
+                                    editor.putString("username", login.username.toString())
+                                    editor.putString("tipoUsuario", login.tipoUsuario.toString())
+                                    editor.apply()
+                                    startActivity(intent)
+
                                 }
                             } else {
                                 Toast.makeText(
@@ -102,14 +109,9 @@ class MainActivity : AppCompatActivity() {
                 })
             }
         }
-        }
+    }
     fun abrirSegundaTela(view: View) {
         val intent = Intent(this@MainActivity, Cadastro::class.java)
         startActivity(intent)
     }
-    }
-
-
-
-
-
+}

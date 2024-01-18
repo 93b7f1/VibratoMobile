@@ -6,111 +6,98 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/fundo">
-
-
-    <View
-        android:id="@+id/containerLogin"
-        android:layout_width="match_parent"
-        android:layout_height="360dp"
-        android:layout_marginHorizontal="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.501" />
-
-    <TextView
-        android:id="@+id/Titulo"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="@string/fraseLogin"
-        android:textSize="25sp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginTop="30dp"
-        app:layout_constraintTop_toTopOf="@id/containerLogin"
-        app:layout_constraintStart_toStartOf="@id/containerLogin"
-        app:layout_constraintEnd_toEndOf="@id/containerLogin"/>
-
-    <EditText
-        android:id="@+id/editEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="E-mail"
-        android:background="@drawable/container_edit_text_login"
-        android:padding="15dp"
-        android:inputType="text"
-        android:maxLines="1"
-        android:layout_marginTop="25dp"
-        android:layout_marginHorizontal="40dp"
-        app:layout_constraintTop_toBottomOf="@id/Titulo"
-        app:layout_constraintStart_toStartOf="@id/containerLogin"
-        app:layout_constraintEnd_toEndOf="@id/containerLogin" />
-
-    <EditText
-        android:id="@+id/editSenha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Senha"
-        android:background="@drawable/container_edit_text_login"
-        android:padding="15dp"
-        android:inputType="textPassword"
-        android:maxLines="1"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="40dp"
-        app:layout_constraintTop_toBottomOf="@id/editEmail"
-        app:layout_constraintStart_toStartOf="@id/containerLogin"
-        app:layout_constraintEnd_toEndOf="@id/containerLogin" />
-
-    <Button
-        android:id="@+id/btLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/entrar"
-        android:textSize="18sp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:padding="15dp"
-        app:cornerRadius="30dp"
-        android:layout_marginHorizontal="40dp"
-        android:backgroundTint="@color/rosa"
-        app:layout_constraintTop_toBottomOf="@id/editSenha"
-        app:layout_constraintStart_toStartOf="@id/containerLogin"
-        app:layout_constraintEnd_toEndOf="@id/containerLogin"
-        app:layout_constraintBottom_toBottomOf="@id/containerLogin"
-        android:layout_marginBottom="20dp"
-        />
-    <TextView
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="@string/login_cadastro_frase"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="@id/containerLogin"
-        app:layout_constraintEnd_toEndOf="@id/containerLogin"
-        app:layout_constraintBottom_toBottomOf="@id/containerLogin"
-        android:clickable="true"
-        android:onClick="abrirSegundaTela"/>
-
-
-
+    >
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="270dp"
-        android:gravity="center"
-        >
-        <ImageView
-            android:id="@+id/imageView2"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/fundo">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="112dp"
-            app:srcCompat="@drawable/logo72px"
-            tools:layout_editor_absoluteY="109dp"
-            />
+            android:layout_height="200dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                app:srcCompat="@drawable/logo72px"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/containerLogin"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/Titulo"
+                android:layout_width="300dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fraseLogin"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
 
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                android:background="@drawable/container_edit_text_login"
+                android:textColorHint="@color/grayText"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="40dp"
+                />
+
+            <EditText
+                android:id="@+id/editSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/senha"
+                android:background="@drawable/container_edit_text_login"
+                android:textColorHint="@color/grayText"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="40dp"
+                />
+
+            <Button
+                android:id="@+id/btLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:backgroundTint="@color/rosa"
+                android:padding="15dp"
+                android:text="@string/entrar"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cornerRadius="30dp"
+                />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/login_cadastro_frase"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="abrirSegundaTela"/>
+        </LinearLayout>
     </LinearLayout>
 
 

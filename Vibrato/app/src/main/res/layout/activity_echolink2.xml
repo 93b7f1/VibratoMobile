@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Echolink2"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EchoLink"
+                android:textSize="25sp"
+                android:layout_marginLeft="10sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:id="@+id/image_background"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="8dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/iv_album_photo"
+                android:layout_width="300dp"
+                android:layout_height="220dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_music_title"
+                style="@style/Echoflow"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/tv_lyrics"
+                android:background="@drawable/grad"
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Visualizar Lyrics"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                />
+            <LinearLayout
+                android:id="@+id/ll_spotify"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/transp2"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:id="@+id/iv_spotify_link"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/spotify"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="100dp"
+
+                    >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/link_spotify"
+                    android:layout_width="30dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/seta"></ImageView>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_amazon"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:background="@color/transp2"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:id="@+id/iv_amazon_link"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/amazon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="100dp"
+
+                    >
+
+                </ImageView>
+                <ImageView
+                    android:id="@+id/link_amazon"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/seta"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_youtube"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:background="@color/transp2"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:id="@+id/iv_youtube_link"
+                    android:layout_width="120dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/youtube"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </ImageView>
+                <ImageView
+                    android:id="@+id/link_youtube"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/seta"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_soundcloud"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:background="@color/transp2"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:id="@+id/iv_soundcloud_link"
+                    android:layout_width="120dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/soundcloud2"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </ImageView>
+                <ImageView
+                    android:id="@+id/link_soundcloud"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/seta"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/link_deezer"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:background="@color/transp2"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:id="@+id/iv_deezer_link"
+                    android:layout_width="120dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/deezer"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </ImageView>
+                <ImageView
+                    android:id="@+id/ll_deezer"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/seta"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_apple"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:background="@color/transp2"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:id="@+id/iv_apple_link"
+                    android:layout_width="120dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/apple"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </ImageView>
+                <ImageView
+                    android:id="@+id/link_apple"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/seta"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/echolinkE"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:text="Prévia"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_marginTop="2sp">
+
+                    </TextView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="95dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/iv_album_photo_preview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:scaleType="centerCrop"
+                            android:background="@color/echolinkE"
+
+                            >
+
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10sp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_music_title_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:textSize="18sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_album_name_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/transp2"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="13sp">
+                        </TextView>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/iconspot">
+                            </ImageView>
+                            <ImageView
+                                android:layout_marginLeft="110dp"
+                                android:id="@+id/iv_start_preview"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/botaoplay"
+                                >
+                            </ImageView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:background="@color/echolinkE"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:text="Perfil do Artista"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="100dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/iv_artist_photo"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@color/echolinkE"
+                            android:scaleType="centerCrop"
+
+
+                            >
+
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/tv_artist_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:background="@color/black"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="VIBRATO"
+                    android:textSize="22sp"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.4"
+                android:background="@android:color/black" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

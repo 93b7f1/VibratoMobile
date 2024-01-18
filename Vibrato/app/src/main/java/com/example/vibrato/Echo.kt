@@ -13,6 +13,7 @@ data class Echo(
     val soundCloud: String,
     val deezer: String,
     val amazonMusic: String,
+    val appleMusic: String,
     val otherPlataform1: String,
     val otherLink1: String,
     val blob: String,

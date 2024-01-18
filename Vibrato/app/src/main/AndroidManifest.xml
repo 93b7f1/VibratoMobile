@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -15,42 +18,62 @@
         android:theme="@style/Theme.Vibrato"
         tools:targetApi="31">
         <activity
-            android:name=".Perfil_ouvinte"
+            android:name=".PerfilArtista2"
             android:exported="false" />
         <activity
-            android:name=".Perfil_artista"
+            android:name=".EchoLinkLyrics2"
             android:exported="false" />
         <activity
-            android:name=".Configuracoes"
+            android:name=".Echolink2"
             android:exported="false" />
         <activity
-            android:name=".MusicianHome"
+            android:name=".UserHome"
             android:exported="false" />
         <activity
             android:name=".Explore"
             android:exported="false" />
         <activity
-            android:name=".EchoLink"
+            android:name=".MusicianHome"
             android:exported="false" />
         <activity
-            android:name=".EchoFlow"
+            android:name=".Perfil_ouvinte"
+            android:exported="false" />
+        <activity
+            android:name=".EchoLinkLyrics"
+            android:exported="false" />
+        <activity
+            android:name=".Configuracoes"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
             android:exported="false" />
         <activity
             android:name=".personalizar"
+            android:exported="false" />
+        <activity
+            android:name=".EchoFlow"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Cadastro"
-            android:exported="false"/>
+            android:exported="false" />
+        <activity
+            android:name=".Perfil_artista"
+            android:exported="false" />
+        <activity
+            android:name=".cadastroMusica2"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroMusica"
+            android:exported="false" />
+        <activity
+            android:name=".EchoLink"
+            android:exported="false" />
         <activity
             android:name=".Splash"
             android:exported="true">
-
-
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

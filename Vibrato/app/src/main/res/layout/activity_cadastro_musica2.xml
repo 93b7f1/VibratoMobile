@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".cadastroMusica2"
-    android:background="@color/cinza">
+    android:background="@color/dark_gray">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,12 +27,19 @@
                 android:layout_alignParentTop="true">
 
                 <ImageButton
-                    android:id="@+id/imageButton2"
+                    android:id="@+id/btn_volta_cadastro_musica"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:backgroundTint="#00FFFFFF"
                     app:srcCompat="@drawable/voltar" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cadastro de Música"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="16dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -73,6 +80,9 @@
                         >
 
                         <EditText
+                            android:textColorHint="@color/grayText"
+                            android:textColor="@color/black"
+                            android:id="@+id/et_titulo_musica"
                             android:layout_width="200dp"
                             android:layout_height="45dp"
                             android:background="@drawable/container_edit_text_echo_link"
@@ -94,6 +104,9 @@
                         >
 
                         <EditText
+                            android:textColorHint="@color/grayText"
+                            android:textColor="@color/black"
+                            android:id="@+id/et_titulo_album"
                             android:layout_width="200dp"
                             android:layout_height="45dp"
                             android:background="@drawable/container_edit_text_echo_link"
@@ -101,6 +114,7 @@
                             android:padding="10dp"
                             android:layout_marginLeft="10dp"
                             android:layout_weight="1"
+
                             />
 
 
@@ -114,6 +128,9 @@
                         >
 
                         <EditText
+                            android:textColorHint="@color/grayText"
+                            android:textColor="@color/black"
+                            android:id="@+id/et_compositor"
                             android:layout_width="200dp"
                             android:layout_height="45dp"
                             android:background="@drawable/container_edit_text_echo_link"
@@ -129,17 +146,26 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:layout_marginBottom="10dp"
-                        android:layout_gravity="center"
-
-                        >
-
-                        <Spinner
-                            android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:id="@+id/tv_genero"
+                            android:layout_width="200dp"
                             android:layout_height="45dp"
-                            android:layout_marginLeft="40dp"
-                            android:layout_marginRight="40dp"
+                            android:hint="@string/genero"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:textSize="18sp"
+                            android:layout_weight="1"/>
+                        <Spinner
+                            android:id="@+id/spinner_generos"
+                            android:layout_width="200dp"
+                            android:textColorHint="@color/grayText"
+                            android:textColor="@color/black"
+                            android:layout_height="45dp"
+                            android:padding="10dp"
                             android:background="@drawable/container_edit_text_echo_link" />
+
 
                     </LinearLayout>
 
@@ -161,27 +187,32 @@
                         </TextView>
 
 
-
                         <EditText
+                            android:textColorHint="@color/grayText"
+                            android:textColor="@color/black"
+                            android:id="@+id/et_lyrics"
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
-                            android:background="@drawable/container_edit_text_echo_link"
-                            android:padding="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:maxLength="100"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
+                            android:layout_marginBottom="15dp"
                             android:layout_weight="1"
-                            />
+                            android:background="@drawable/container_edit_text_echo_link"
+                            android:maxLength="100"
+                            android:padding="10dp"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"/>
 
                         <Button
-                            android:id="@+id/btProximo"
+                            android:id="@+id/btn_cadastro_musica"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:backgroundTint="@color/rosa"
+                            android:background="@drawable/grad"
                             android:text="@string/salvar"
                             android:textColor="@color/white"
+                            android:padding="10dp"
                             android:textSize="20sp"
                             android:textStyle="bold"
                             app:cornerRadius="30dp"

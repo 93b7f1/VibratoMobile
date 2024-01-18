@@ -4,30 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EchoFlow">
+    tools:context=".EchoFlow"
+    android:background="@color/black"
+    >
+    <ImageView
+        android:id="@+id/loadingflow"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.5"/>
 
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:id="@+id/principal"
         >
+        <ImageView
+            android:id="@+id/pausekk"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            />
+
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:id="@+id/imageEcho"
-
             />
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:id="@+id/nextImageEcho"
             />
-    </LinearLayout>
+    </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
@@ -44,13 +63,13 @@
         >
         <TextView
             style="@style/Echoflow"
-            android:layout_width="323dp"
-            android:layout_height="60dp"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
             android:layout_marginTop="30dp"
             android:gravity="center"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="35sp"
+            android:textSize="28sp"
             android:id="@+id/echoname"
             />
 
@@ -102,6 +121,7 @@
 
                 >
                 <ImageView
+                    android:id="@+id/iv_echolink_share"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@mipmap/echoesicon2"
@@ -128,7 +148,7 @@
 
         <TextView
             style="@style/Echoflow"
-            android:layout_width="350dp"
+            android:layout_width="320dp"
             android:layout_height="61dp"
             android:layout_marginTop="80dp"
             android:gravity="center"
@@ -136,7 +156,7 @@
             android:textColor="@color/white"
             android:id="@+id/artistname"
 
-            android:textSize="25sp" />
+            android:textSize="35sp" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="65dp"
@@ -147,10 +167,12 @@
             >
 
             <ImageView
+                android:id="@+id/btn_home"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:src="@mipmap/home"
-                android:onClick="imageViewClicked">
+                android:onClick="imageViewHomeClicked"
+                >
 
             </ImageView>
 

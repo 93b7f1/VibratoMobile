@@ -15,4 +15,9 @@
     <color name="homeBackgroundEscuro">#222325</color>
     <color name="homeBackgroundClaro">#F0F3F5</color>
     <color name="vermelho">#D36767</color>
+
+    <color name="purple">#647CFD</color>
+    <color name="grayText">#393838</color>
+    <color name="dark_gray">#1d1d1d</color>
+    <color name="bright_color_white">#f0f3f5</color>
 </resources>

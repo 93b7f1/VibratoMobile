@@ -1,5 +1,7 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Vibrato</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="fraseLogin">EXPLORE, DESCUBRA E APRECIE</string>
     <string name="entrar">ENTRAR</string>
     <string name="fraseCadastro">CADASTRE-SE E MOSTRE SUA ARTE PARA O MUNDO!</string>
@@ -26,7 +28,7 @@
     <string name="informacoes">Informações da Música</string>
     <string name="etapas">Etapas</string>
     <string name="previaSpotify">Prévia Spotify</string>
-    <string name="alterarFoto">Alterar foto de perfil</string>
+    <string name="alterarFoto">Adicionar Foto do Álbum</string>
     <string name="echoLink">ECHO Links</string>
     <string name="login_cadastro_frase">Não possui uma conta? Clique aqui para se cadastrar.</string>
     <string name="nome">Nome</string>
@@ -35,10 +37,13 @@
     <string name="senha">Senha</string>
     <string name="senha_confirmacao">Confirmar Senha</string>
     <string name="homeTopic1">• Publique sua música em poucos passos</string>
+    <string name="homeTopicUser1">• Acesse o perfil de seus artistas favoritos</string>
     <string name="homeTopic2">• Identificação de tendências</string>
     <string name="homeTopic3">• Acessível a qualquer momento</string>
     <string name="homeButtonPublish">Publique sua música</string>
-    <string name="configuracoes">CONFIGURAÇÕES</string>
+    <string name="homeButtonEdit">Personalize Perfil</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="analise">Análise</string>
     <string name="editar">Editar</string>
     <string name="sac">SAC</string>
     <string name="excluir_conta">Excluir conta</string>
@@ -51,5 +56,10 @@
         a própria voz.</string>
     <string name="texto_generico2">Desde muito jovem, a música sempre foi minha melhor amiga.</string>
     <string name="ultimas_publicacoes">Últimas Publicações</string>
+    <string name="publicacoes_mais_visualizadas">Publicações Mais Visualizadas</string>
+    <string name="letra">Letra</string>
+    <string name="musica" translatable="false">Nenhuma música cadastrada</string>
+    <string name="otherLink" translatable="false">Id Spotify</string>
+
 
 </resources>

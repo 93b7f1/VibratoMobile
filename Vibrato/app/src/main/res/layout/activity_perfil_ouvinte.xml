@@ -25,19 +25,13 @@
                 android:background="@color/black"
                 android:layout_alignParentTop="true">
 
-                <ImageButton
-                    android:id="@+id/imageButton2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:backgroundTint="#00FFFFFF"
-                    app:srcCompat="@drawable/voltar" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/perfil"
                     android:textSize="25sp"
                     android:textColor="@color/white"
+                    android:layout_marginLeft="10sp"
                     android:layout_marginTop="15dp"/>
             </LinearLayout>
 
@@ -92,19 +86,7 @@
 
                         />
 
-                    <Button
-                        android:id="@+id/btEditarPerfil"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/cinza_claro"
-                        android:text="@string/editar"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="30dp"
-                        android:layout_marginLeft="20dp"
 
-                        />
                 </LinearLayout>
 
                 <LinearLayout

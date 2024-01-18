@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CadastroMusica"
-    android:background="@color/cinza">
+    android:background="@color/dark_gray">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,13 +26,14 @@
                 android:background="@color/black"
                 android:layout_alignParentTop="true">
 
-                <ImageButton
-                    android:id="@+id/imageButton2"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:backgroundTint="#00FFFFFF"
-                    app:srcCompat="@drawable/voltar" />
+                    android:text="Cadastro de Música"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="15dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -41,26 +42,31 @@
                 android:layout_marginTop="65dp"
                 android:orientation="vertical"
                 >
-
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/image_view_perfil"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
                     android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
                     android:padding="15sp"
-                    app:srcCompat="@drawable/semimagem" />
+                    android:src="@drawable/semimagem"
+                    app:shapeAppearanceOverlay="@style/Circular"/>
+
+
 
                 <Button
-                    android:id="@+id/btLogin"
+                    android:id="@+id/btn_cadastro_imagem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:backgroundTint="@color/rosa"
+                    android:background="@drawable/grad"
                     android:text="@string/alterarFoto"
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:cornerRadius="30dp"
+                    android:padding="10dp"
                     android:layout_marginBottom="15dp"/>
 
                 <LinearLayout
@@ -89,90 +95,131 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:layout_marginBottom="10dp"
+                        android:gravity="center_horizontal"
                         >
-
-                        <EditText
-                            android:layout_width="200dp"
-                            android:layout_height="45dp"
-                            android:background="@drawable/container_edit_text_echo_link"
-                            android:hint="Spotify"
-                            android:padding="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_weight="1"
-                            />
-
-                        <EditText
-                            android:layout_width="200dp"
-                            android:layout_height="45dp"
-                            android:hint="Youtube"
-                            android:padding="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/container_edit_text_echo_link"
-                            />
+                        <LinearLayout
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp">
+                            <EditText
+                                android:textColorHint="@color/grayText"
+                                android:textColor="@color/black"
+                                android:id="@+id/et_spotify"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/container_edit_text_echo_link"
+                                android:hint="Spotify"
+                                android:padding="10dp"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true" />
+                        </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="140dp"
+                           android:layout_height="wrap_content">
+                           <EditText
+                               android:textColorHint="@color/grayText"
+                               android:textColor="@color/black"
+                               android:id="@+id/et_youtube"
+                               android:layout_width="match_parent"
+                               android:layout_height="45dp"
+                               android:hint="Youtube"
+                               android:padding="10dp"
+                               android:layout_weight="1"
+                               android:scrollHorizontally="true"
+                               android:singleLine="true"
+                               android:background="@drawable/container_edit_text_echo_link"
+                               />
+                       </LinearLayout>
 
                     </LinearLayout>
+
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:layout_marginBottom="10dp"
-
+                        android:gravity="center_horizontal"
                         >
-
-                        <EditText
-                            android:layout_width="200dp"
-                            android:layout_height="45dp"
-                            android:background="@drawable/container_edit_text_echo_link"
-                            android:hint="SoundCloud"
-                            android:padding="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_weight="1"
-                            />
-
-                        <EditText
-                            android:layout_width="200dp"
-                            android:layout_height="45dp"
-                            android:hint="Deezer"
-                            android:padding="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/container_edit_text_echo_link"
-                            />
-
+                        <LinearLayout
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp">
+                            <EditText
+                                android:textColorHint="@color/grayText"
+                                android:textColor="@color/black"
+                                android:id="@+id/et_soundcloud"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/container_edit_text_echo_link"
+                                android:hint="SoundCloud"
+                                android:padding="10dp"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:textColorHint="@color/grayText"
+                                android:textColor="@color/black"
+                                android:id="@+id/et_deezer"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:hint="Deezer"
+                                android:padding="10dp"
+                                android:layout_weight="1"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:background="@drawable/container_edit_text_echo_link"
+                                />
+                        </LinearLayout>
                     </LinearLayout>
+
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:layout_marginBottom="10dp"
-
+                        android:gravity="center_horizontal"
                         >
-
-                        <EditText
-                            android:layout_width="200dp"
-                            android:layout_height="45dp"
-                            android:background="@drawable/container_edit_text_echo_link"
-                            android:hint="Amazon Music"
-                            android:padding="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_weight="1"
-                            />
-
-                        <EditText
-                            android:layout_width="200dp"
-                            android:layout_height="45dp"
-                            android:hint="Apple Music"
-                            android:padding="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/container_edit_text_echo_link"
-                            />
-
+                        <LinearLayout
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp">
+                            <EditText
+                                android:textColorHint="@color/grayText"
+                                android:textColor="@color/black"
+                                android:id="@+id/et_amazonMusic"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/container_edit_text_echo_link"
+                                android:hint="Amazon Music"
+                                android:padding="10dp"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:textColorHint="@color/grayText"
+                                android:textColor="@color/black"
+                                android:id="@+id/et_appleMusic"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:hint="Apple Music"
+                                android:padding="10dp"
+                                android:layout_weight="1"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:background="@drawable/container_edit_text_echo_link"
+                                />
+                        </LinearLayout>
                     </LinearLayout>
+
+                    <!--                    ADICIONAR ALTERAÇÕES DE SCROLLVIEW-->
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -192,6 +239,9 @@
                         </TextView>
 
                         <EditText
+                            android:textColorHint="@color/grayText"
+                            android:textColor="@color/black"
+                            android:id="@+id/et_link_perfil"
                             android:layout_width="match_parent"
                             android:layout_height="45dp"
                             android:background="@drawable/container_edit_text_echo_link"
@@ -201,37 +251,42 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
                             />
 
                         <EditText
+                            android:textColorHint="@color/grayText"
+                            android:textColor="@color/black"
+                            android:id="@+id/et_link_musica"
                             android:layout_width="match_parent"
                             android:layout_height="45dp"
                             android:background="@drawable/container_edit_text_echo_link"
-                            android:hint="Link da Música"
+                            android:hint="@string/otherLink"
                             android:padding="10dp"
                             android:layout_marginBottom="15dp"
-
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
                             />
 
                         <Button
-                            android:id="@+id/btProximo"
+                            android:id="@+id/btn_proxima_etapa"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:backgroundTint="@color/rosa"
+                            android:background="@drawable/grad"
                             android:text="@string/proximaEtapa"
                             android:textColor="@color/white"
                             android:textSize="20sp"
                             android:textStyle="bold"
                             app:cornerRadius="30dp"
+                            android:padding="10dp"
                             android:layout_marginBottom="15dp"/>
 
                     </LinearLayout>
-
-
 
                 </LinearLayout>
                 <LinearLayout
